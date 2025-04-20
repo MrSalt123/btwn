@@ -1,8 +1,14 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Noto_Sans_JP } from "next/font/google";
 import "./globals.css";
 import { ReactNode } from "react";
 import Head from "next/head";
+
+const notoSansJP = Noto_Sans_JP({
+  variable: "--font-noto-sans",
+  subsets: ["latin"],
+  weight: ["400", "700"], 
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,7 +36,7 @@ export default function RootLayout({
         <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js" />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${notoSansJP.variable} antialiased`}
       >
         {children}
       </body>

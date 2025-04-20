@@ -85,9 +85,9 @@ export default function Home() {
         {/* opening text */}
         <ParallaxLayer offset={2} speed={.3}>
           <section className="flex flex-col items-center text-4xl h-full">
-            <div className="flex flex-col gap-10">
+            <div className="flex flex-col gap-10 font-[family-name:var(--font-noto-sans)]">
               <span className="font-bold mb-8">A powerful online presence isn't a luxury — it's your first impression.</span>
-              <div className="flex flex-col mt-8 gap-3">
+              <div className="flex flex-col mt-8 gap-5">
                 <span><span className="text-red-500">75% </span>of users judge credibility <span className="text-red-500">based on design </span></span>
                 <span>Your website is open <span className="text-red-500">24/7 </span> — is it <span className="text-red-500">working for you?</span></span>
                 <span><span className="text-red-500">Mobile-first, speed, and clarity</span> aren't optional — they’re <span className="text-red-500">expected</span></span>
@@ -109,7 +109,7 @@ export default function Home() {
         </ParallaxLayer>
 
         {/* why btwn section */}
-        <ParallaxLayer offset={3.2} speed={.1}>
+        <ParallaxLayer offset={3.5} speed={.1}>
           <WhyBtwn />
         </ParallaxLayer>
 
